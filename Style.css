@@ -25,41 +25,75 @@ header {
 
 a{
     color: azure;
+    font-size: 1rem;
 }
 
 li{
-list-style: none;
+    list-style: none;
+}
+li:hover{
+    padding: 1.5rem;
+    transition: 0.5s;
+    background-color:#815E5B;
+    border-radius: 1rem;
 }
 
 .listita{
-display: flex;
-justify-content: space-around;
-align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo{
-width: 13rem;
-height: 6.5rem;
-border-radius: 0.5rem;
+    width: 13rem;
+    height: 6.5rem;
+    border-radius: 0.5rem;
 }
 
 .grande{
     font-size: 1.5rem;
 }
 
-main {
+main{
     padding: 1em;
     text-align: center;
 }
 
 .cafes{
-    width: 30rem;
-    height: 20rem;
+    width:40%;
+    height: 35%;
     object-fit: cover;
     border-radius: 1rem;
 }
 
-button {
+.mocca{
+    width:33.76%;
+    height: 30%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.latte{
+    width:46.7%;
+    height: 37%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.capucchino{
+    width:31.1%;
+    height: 29%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+h5{
+    font-size: 2rem;
+}
+
+.coffee{
+    background-color: white;
+}
+
+button{
     background-color: #2F4F4F;
     color: white;
     padding: 0.5em 1em;
