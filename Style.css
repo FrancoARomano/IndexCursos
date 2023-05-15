@@ -154,7 +154,7 @@ footer {
     grid-area: Medialunas;
 }
 
-.Sándwichs {
+.Sandwichs {
     grid-area: Sándwichs;
 }
 
@@ -167,11 +167,11 @@ footer {
     font-size: 2rem;
 }
 
-.café-tostado-medio {
+.cafe-tostado-medio {
     grid-area: café-tostado-medio;
 }
 
-.Café-tostado-oscuro {
+.Cafe-tostado-oscuro {
     grid-area: Café-tostado-oscuro;
 }
 
