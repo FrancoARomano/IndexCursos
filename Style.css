@@ -3,12 +3,12 @@
     font-family: 'Crimson Text', serif;
 }
 
-body{
+body {
     background-color: #c4b19d;
-    background-image:url("./assets/cafe.png");
-    background-repeat:no-repeat;
+    background-image: url("./assets/cafe.png");
+    background-repeat: no-repeat;
     background-size: cover;
-    color:#FAFFFD;
+    color: #FAFFFD;
     font-size: 1.0rem;
     font-weight: bold;
 }
@@ -23,86 +23,89 @@ header {
     border-color: bisque;
 }
 
-a{
+a {
     color: azure;
     font-size: 1rem;
 }
 
-li{
+li {
     list-style: none;
 }
-li:hover{
+
+li :hover {
     padding: 1.5rem;
     transition: 0.5s;
-    background-color:#815E5B;
+    background-color: #815E5B;
     border-radius: 1rem;
 }
 
-.listita{
+.listita {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.logo{
+.logo {
     width: 13rem;
     height: 6.5rem;
     border-radius: 0.5rem;
 }
 
-.grande{
+.grande {
     font-size: 1.5rem;
 }
 
-main{
+main {
     padding: 1em;
     text-align: center;
 }
 
-.cafes{
-    width:40%;
+.cafes {
+    width: 40%;
     height: 35%;
     object-fit: cover;
     border-radius: 1rem;
 }
 
-.mocca{
-    width:33.76%;
+.mocca {
+    width: 33.76%;
     height: 30%;
     object-fit: cover;
     border-radius: 1rem;
 }
-.latte{
-    width:46.7%;
+
+.latte {
+    width: 46.7%;
     height: 37%;
     object-fit: cover;
     border-radius: 1rem;
 }
-.capucchino{
-    width:31.1%;
+
+.capucchino {
+    width: 31.1%;
     height: 29%;
     object-fit: cover;
     border-radius: 1rem;
 }
 
-h5{
+h5 {
     font-size: 2rem;
 }
 
-.coffee{
+.coffee {
     background-color: white;
 }
 
-button{
+button {
     background-color: #2F4F4F;
     color: white;
-    padding: 0.5em 1em;
+    padding: 0.1em 0.3em;
     border: none;
     border-radius: 0.5em;
     margin-top: 1em;
 }
 
-button:hover {
+button:hover{
     cursor: pointer;
     background-color: #708090;
 }
@@ -114,25 +117,76 @@ footer {
     padding: 1em;
     border-radius: 0.5em
 }
-form{
-    box-shadow: #291F1E;
-}
-.barismo{
-    background-image: url("./assets/barismo.png");
-    height: 40rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.beneficios{
-    text-align: left;
-    font-size: 2rem;
-}
-.cafeMolido{
-    border-radius: 0.5rem;
-    height:25rem;
-}
-.termos{
-    border-radius: 0.5rem;
-    height: 25rem;
+
+.grid {
+    border-radius: 5rem;
+    height: 20rem;
+    width: 20rem;
+
 }
 
+.grid:hover {
+    transition: 0.5s;
+    padding: 0.5rem;
+    border-style: double;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(autofill, minmax (15rem, 1fr));
+    grid-template-rows: 0.5fr 1.5fr 0.5fr 1.5fr 1.2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "Comida . ."
+        "Medialunas Sándwichs Snacks"
+        "Productos-para-llevar . ."
+        "café-tostado-medio Café-tostado-oscuro Té"
+        "Termos-para-bebidas-calientes Vasos-reutilizables Tazas";
+}
+
+.Comida {
+    grid-area: Comida;
+    font-size: 2rem;
+}
+
+.Medialunas {
+    grid-area: Medialunas;
+}
+
+.Sándwichs {
+    grid-area: Sándwichs;
+}
+
+.Snacks {
+    grid-area: Snacks;
+}
+
+.Productos-para-llevar {
+    grid-area: Productos-para-llevar;
+    font-size: 2rem;
+}
+
+.café-tostado-medio {
+    grid-area: café-tostado-medio;
+}
+
+.Café-tostado-oscuro {
+    grid-area: Café-tostado-oscuro;
+}
+
+.Té {
+    grid-area: Té;
+}
+
+.Termos-para-bebidas-calientes {
+    grid-area: Termos-para-bebidas-calientes;
+}
+
+.Vasos-reutilizables {
+    grid-area: Vasos-reutilizables;
+}
+
+.Tazas {
+    grid-area: Tazas;
+}
