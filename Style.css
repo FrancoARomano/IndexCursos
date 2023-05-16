@@ -162,7 +162,6 @@ footer {
 
 .Comida {
     grid-area: Comida;
-    font-size: 2rem;
 }
 
 .Medialunas {
@@ -179,7 +178,6 @@ footer {
 
 .Productos-para-llevar {
     grid-area: Productos-para-llevar;
-    font-size: 2rem;
 }
 
 .cafe-tostado-medio {
@@ -221,7 +219,7 @@ footer {
     .container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
-        grid-template-rows: 0.5fr 1.5fr 1.5fr 1.5fr 0.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+        grid-template-rows: 0.5fr 1.5fr 1.5fr 1.5fr 0.5fr 1.5fr 2.0fr 1.5fr 1.5fr 1.5fr 1.5fr;
         gap: 0px 0px;
         grid-template-areas:
             "Comida"
