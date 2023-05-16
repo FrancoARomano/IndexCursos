@@ -5,8 +5,6 @@
 
 body {
     background-color: #c4b19d;
-    background-image: url("./assets/cafe.png");
-    background-repeat: no-repeat;
     background-size: cover;
     color: #FAFFFD;
     font-size: 1.0rem;
@@ -26,14 +24,25 @@ header {
 a {
     color: azure;
     font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 li {
     list-style: none;
+    padding: 1rem;
 }
 
-li :hover {
-    padding: 1.5rem;
+.listado :hover {
+    padding: 1.3rem;
+    transition: 0.5s;
+    background-color: #815E5B;
+    border-radius: 1rem;
+}
+
+li:hover {
+    padding: 1.3rem;
     transition: 0.5s;
     background-color: #815E5B;
     border-radius: 1rem;
@@ -46,8 +55,9 @@ li :hover {
 }
 
 .logo {
-    width: 13rem;
-    height: 6.5rem;
+    padding: 1.3rem;
+    width: 12rem;
+    height: 8rem;
     border-radius: 0.5rem;
 }
 
@@ -118,6 +128,11 @@ footer {
     border-radius: 0.5em
 }
 
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
 .grid {
     border-radius: 5rem;
     height: 20rem;
@@ -133,7 +148,7 @@ footer {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(autofill, minmax (15rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
     grid-template-rows: 0.5fr 1.5fr 0.5fr 1.5fr 1.2fr;
     gap: 0px 0px;
     grid-auto-flow: row;
@@ -189,4 +204,15 @@ footer {
 
 .Tazas {
     grid-area: Tazas;
+}
+
+@media (max-width:425px){
+    .logo{
+        width: 100%;
+        height: auto;
+    }
+
+
+
+
 }
