@@ -115,7 +115,7 @@ button {
     margin-top: 1em;
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
     background-color: #708090;
 }
@@ -128,7 +128,7 @@ footer {
     border-radius: 0.5em
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: center;
 }
@@ -206,13 +206,75 @@ footer {
     grid-area: Tazas;
 }
 
-@media (max-width:425px){
-    .logo{
+@media (max-width:425px) {
+
+    .logo {
         width: 100%;
         height: auto;
     }
 
+    .listita {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr));
+        grid-template-rows: 0.5fr 1.5fr 1.5fr 1.5fr 0.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr 1.5fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "Comida"
+            "Medialunas"
+            "sandwich"
+            "snacks"
+            "Productos-para-llevar"
+            "cafe-tostado-medio"
+            "cafe-tostado-oscuro"
+            "Té"
+            "Termos-para-bebidas-calientes"
+            "Vasos-reutilizables"
+            "Tazas";
+        }
 
+        .Comida {
+            grid-area: Comida;
+        }
 
+        .Medialunas {
+            grid-area: Medialunas;
+        }
+
+        .sandwich {
+            grid-area: sandwich;
+        }
+
+        .snacks {
+            grid-area: snacks;
+        }
+
+        .cafe-tostado-medio {
+            grid-area: cafe-tostado-medio;
+        }
+
+        .cafe-tostado-oscuro {
+            grid-area: cafe-tostado-oscuro;
+        }
+
+        .Té {
+            grid-area: Té;
+        }
+
+        .Termos-para-bebidas-calientes {
+            grid-area: Termos-para-bebidas-calientes;
+        }
+
+        .Vasos-reutilizables {
+            grid-area: Vasos-reutilizables;
+        }
+
+        .Tazas {
+            grid-area: Tazas;
+        }
 
 }
